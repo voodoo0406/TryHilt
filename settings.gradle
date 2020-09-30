@@ -1,0 +1,2 @@
+rootProject.name='TryHilt'
+include ':app'
