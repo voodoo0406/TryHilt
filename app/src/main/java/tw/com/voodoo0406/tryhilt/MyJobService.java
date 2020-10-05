@@ -21,9 +21,7 @@ public class MyJobService extends Hilt_MyJobService {
   Fruit apple;
 
   @Inject
-  public MyJobService() {
-    super();
-  }
+  public MyJobService() {}
 
   public static void enqueueService(Context context) {
     Log.d("GGGGG", "enqueueService: ");
