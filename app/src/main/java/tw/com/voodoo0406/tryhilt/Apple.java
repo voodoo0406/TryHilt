@@ -5,7 +5,8 @@ import javax.inject.Inject;
 public class Apple extends Fruit {
 
   @Inject
-  public Apple() {
+  public Apple(Origin origin) {
+    super(origin);
   }
 
   @Override

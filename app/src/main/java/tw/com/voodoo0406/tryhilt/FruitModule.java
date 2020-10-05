@@ -11,4 +11,7 @@ public abstract class FruitModule {
 
   @Binds
   public abstract Fruit bindApple(Apple apple);
+
+  @Binds
+  public abstract Origin bindOrigin(OriginTaiwan originTaiwan);
 }

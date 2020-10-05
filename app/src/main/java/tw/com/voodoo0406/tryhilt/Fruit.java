@@ -4,9 +4,17 @@ import android.util.Log;
 
 public abstract class Fruit {
 
-  abstract String getName();
-  abstract int getPrice();
-  public void printInfo() {
-    Log.d("GGGGG", getName() + ": " + getPrice());
+  private final Origin origin;
+
+  public Fruit(Origin origin) {
+    this.origin = origin;
   }
+
+  public void printInfo() {
+    Log.d("GGGGG", getName() + ": " + getPrice() + ", origin from " + origin.getOrigin());
+  }
+
+  abstract String getName();
+
+  abstract int getPrice();
 }
