@@ -20,7 +20,6 @@ public class MyJobService extends Hilt_MyJobService {
   @Inject
   Fruit apple;
 
-  @Inject
   public MyJobService() {}
 
   public static void enqueueService(Context context) {

@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
     apple.printInfo();
+    ((TryHiltApplication)getApplication()).globalData.printInfo();
     MyJobService.enqueueService(this);
   }
 }
